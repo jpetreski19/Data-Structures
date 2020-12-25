@@ -158,7 +158,7 @@ public:
 
 	/**
 	 *	Merges 2 treaps into one.
-	 *	When the 2 nodes we are comparing are node empty, then the one
+	 *	When the 2 nodes we are comparing are not empty, then the one
 	 *	with higher priority is taken to be the parent of the treap that will be formed
 	 *	after merging its left or right child with the other treap.
 	 *
