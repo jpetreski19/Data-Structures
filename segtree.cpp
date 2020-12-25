@@ -112,14 +112,14 @@ public:
 	 */
 	int find_max(int left, int right) {
 		if (left <= leftmost and rightmost <= right) {
-			// Case 1:
+			// Case 1
 			return get_max(this);
 		}
 		else if (left > rightmost or right < leftmost) {
-			// Case 2:
+			// Case 2
 			return INT_MIN;
 		} else {
-			// Case 3:
+			// Case 3
 			return max(left_child->find_max(left, right), right_child->find_max(left, right));
 		}
 	}
@@ -134,14 +134,14 @@ public:
 	 */
 	int find_min(int left, int right) {
 		if (left <= leftmost and rightmost <= right) {
-			// Case 1:
+			// Case 1
 			return get_min(this);
 		}
 		else if (left > rightmost or right < leftmost) {
-			// Case 2:
+			// Case 2
 			return INT_MAX;
 		} else {
-			// Case 3:
+			// Case 3
 			return min(left_child->find_min(left, right), right_child->find_min(left, right));
 		}
 	}
@@ -213,8 +213,6 @@ public:
 
 
 int main() {
-	// ios::sync_with_stdio(false);
-
 	int n;
 	cin >> n;
 
