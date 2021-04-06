@@ -195,5 +195,6 @@ int main() {
     }
   }
 
+  delete min_heap;
   return 0;
 }
